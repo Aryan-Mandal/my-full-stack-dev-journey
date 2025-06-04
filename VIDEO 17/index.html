@@ -1,69 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Selectors</title>
-    <Style>
-        /* Element selector */
-        div{
-            background-color: aqua ;
-        }
-        /* class selector */
-        .red{
-            color: red;
-        }
-        /* id selector */
-        #yellow{
-            color: beige;
-        }
-        /* child selector */
-        div > p{
-            background-color: beige;
-        }
-        /* decendent selector*/
-        div p{
-            color: red;
-        }
-        /* Universal selector*/
-        *{
-            margin:0;
-            padding:0;
-        }
-        /* Pseudo selectors */
-        a:link{
-            color:red
-        }
-        a:visited{
-            color: gold;
-        }
-        a:active{
-            background-color: green;
-        }
-        a:hover{
-            background-color: aqua;
-        }
-        a:first-child{
-            background-color: black
-        }
-    </Style>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="red">
-        hi this is div 
-        <p>this is a paragraph</p>
+      hi this is div
+      <p>this is a paragraph</p>
     </div>
-    <div id="yellow">
-        hi this is also paragraph 
-    </div>
+    <div id="yellow">hi this is also paragraph</div>
     <div>
-        <span>
+      <span>
         <p>hi another paragraph</p>
-        </span>
+      </span>
     </div>
     <span>
-    <a href="https://google.com">go to google</a>
-    <a href="https://facebook.com">go to facebook</a>
+      <a href="https://google.com">go to google</a>
+      <a href="https://facebook.com">go to facebook</a>
     </span>
-</body>
+  </body>
 </html>

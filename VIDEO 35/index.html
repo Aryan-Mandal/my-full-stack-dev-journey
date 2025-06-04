@@ -1,35 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS selectors(2)</title>
-    <style>
-        .boxes:first-line{
-            color: blue;
-        }
-        ::selection{
-            background-color: black;
-            color:aqua;
-        }
-        .boxes::before{
-            content:"this is aryan";
-        }
-        .box::first-letter{
-            color: peru;
-            font-size: 35px;
-        }
-        input::placeholder{
-            color: rgb(65, 64, 64);
-        }
-    </style>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="boxes">
-        <div data-color="primary" class="box">I am forst box</div>
-        <div class="box">This is a box</div>
-        <div class="box">This is a box</div>
-        <input type="text" placeholder="Write your name here.">
+      <div data-color="primary" class="box">I am forst box</div>
+      <div class="box">This is a box</div>
+      <div class="box">This is a box</div>
+      <input type="text" placeholder="Write your name here." />
     </div>
-</body>
+  </body>
 </html>

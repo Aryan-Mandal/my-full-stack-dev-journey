@@ -1,49 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Variables</title>
-    <style>
-        :root{
-            --color:rgb(7, 96, 7);
-            --seccolor:rgb(17,240,17);
-            --bar:5px
-        }
-
-    .nav{
-        background-color: var(--color);
-        padding: 5px;
-        margin: var(--bar);
-    }
-    .container{
-        background-color:var(--seccolor);
-        padding: var(--bar);
-        margin: 6px;
-    }
-    ul{
-        display: flex;
-    }
-    li{
-        padding: 20px;
-        list-style: inside;
-        border:solid;
-        border-color: var(--seccolor);
-        margin: var(--bar);
-    }
-    </style>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="nav">
-        <ul>
-            <li>home</li>
-            <li>about</li>
-            <li>contact</li>
-        </ul>
+      <ul>
+        <li>home</li>
+        <li>about</li>
+        <li>contact</li>
+      </ul>
     </div>
     <div class="container">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit alias saepe illo necessitatibus similique laboriosam nisi illum, quae id ipsa optio cum adipisci quas soluta est unde officia? Sapiente labore aut praesentium aperiam ea.
-
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit alias
+      saepe illo necessitatibus similique laboriosam nisi illum, quae id ipsa
+      optio cum adipisci quas soluta est unde officia? Sapiente labore aut
+      praesentium aperiam ea.
     </div>
-</body>
+  </body>
 </html>

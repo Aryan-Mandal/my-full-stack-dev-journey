@@ -1,0 +1,22 @@
+/* spacificity is the priority given to when same element has multiple input from different cmd */
+h1 {
+  /* spacificity=1 */
+  color: aqua;
+}
+h1.yello {
+  /* spacificity=1+10=11 */
+  color: yellow;
+}
+.blue {
+  /* spacificity=10 */
+  color: blue;
+}
+.orange {
+  /* spacificity=10 */
+  color: orange;
+}
+[data-x="a"] {
+  /* This is an Attribute Selector */
+  /* spacificity=10 */
+  color: brown;
+}

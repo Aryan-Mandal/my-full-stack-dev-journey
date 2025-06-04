@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap");
+.box {
+  font-family: "Baloo Bhaijaan", Arial Narrow, Arial, sans-serif;
+}
+.bex {
+  font-size: 30px;
+}
+p {
+  font-family: "Baloo Bhaijaan 2", serif;
+  font-weight: bolder;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-decoration-color: aqua;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 2.5px;
+  text-align: center;
+}

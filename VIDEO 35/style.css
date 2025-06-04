@@ -1,0 +1,17 @@
+.boxes:first-line {
+  color: blue;
+}
+::selection {
+  background-color: black;
+  color: aqua;
+}
+.boxes::before {
+  content: "this is aryan";
+}
+.box::first-letter {
+  color: peru;
+  font-size: 35px;
+}
+input::placeholder {
+  color: rgb(65, 64, 64);
+}

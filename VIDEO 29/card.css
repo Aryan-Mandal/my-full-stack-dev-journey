@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: whitesmoke;
+}
+.card {
+  border: 1px solid rgba(128, 128, 128, 0.614);
+  background-color: white;
+  display: inline-block;
+}
+.card1 {
+  height: 520px;
+  width: 365px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.card2 {
+  height: 500px;
+  width: 200px;
+  margin: 10px;
+}
+img,
+.img1 {
+  height: 200px;
+  border-radius: 30px;
+  margin: 5px;
+}
+.img2 {
+  height: 200px;
+  width: 350px;
+  border-radius: 30px;
+  margin: 5px;
+}
+.tags {
+  position: relative;
+  top: 5px;
+  left: 15px;
+  margin: 3px;
+  padding: 5px;
+  height: 10px;
+  border: 0.5px solid rgba(128, 128, 128, 0.349);
+  border-radius: 20px;
+  font-family: "Baloo Bhai 2", sans-serif;
+  color: rgba(128, 128, 128, 0.493);
+}
+.heading {
+  position: relative;
+  top: 10px;
+  left: 12px;
+  font-size: 40px;
+  font-family: "Roberto Condensed", sans-serif;
+}
+p {
+  position: relative;
+  left: 2px;
+  top: 8px;
+  font-family: "Roborto Condensed", sans-serif;
+  padding: 2px;
+  color: rgba(128, 128, 128, 0.824);
+}
+button {
+  position: relative;
+  left: 120px;
+  top: 15px;
+  background-color: rgba(93, 255, 255, 0.53);
+  color: rgb(75, 105, 255);
+  border: 0px;
+  padding: 10px;
+  border-radius: 20px;
+  width: 110px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

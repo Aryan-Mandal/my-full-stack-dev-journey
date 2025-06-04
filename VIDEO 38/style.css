@@ -1,0 +1,25 @@
+.container {
+  border: 3px solid red;
+  display: flex;
+  justify-content: center;
+  /*align item in centre in the x axis */
+  align-items: center;
+  /* align item in centre in the y axis */
+  height: 80vh;
+  /* flex-wrap: wrap; */
+  flex-wrap: wrap-reverse;
+  align-content: center;
+  /* There is no justify-content in centre */
+  flex-flow: row wrap;
+  row-gap: 15px;
+  column-gap: 40px;
+  /* or <row gap> <column gap> */
+  gap: 15px 40px;
+}
+.item {
+  height: 36px;
+  width: 36px;
+  border: 2px solid black;
+  margin: 4px;
+  background-color: blueviolet;
+}

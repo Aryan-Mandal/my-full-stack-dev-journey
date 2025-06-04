@@ -1,0 +1,27 @@
+#parent {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  height: 90vh;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+.box {
+  border: 1px solid purple;
+  height: 150px;
+  width: 250px;
+}
+#box1 {
+  background-color: aqua;
+}
+#box2 {
+  background-color: brown;
+}
+#box3 {
+  background-color: blue;
+}
+#box4 {
+  background-color: darkorange;
+}

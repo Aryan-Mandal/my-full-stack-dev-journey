@@ -1,0 +1,27 @@
+body {
+  background-color: red;
+}
+@media only screen and (max-width: 525px) {
+  /* used when different css is to be applied to different screen */
+  body {
+    background-color: blue;
+  }
+  .boxes {
+    flex-direction: column;
+  }
+  @media screen and (orientation: portrait) {
+    .boxes {
+      border: 5px solid black;
+    }
+  }
+}
+.boxes {
+  display: flex;
+}
+.box {
+  background-color: aqua;
+  height: 100px;
+  width: 100px;
+  margin: 15px;
+  padding: 20px;
+}
