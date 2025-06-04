@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Spacificity and Cascade</title>
+    <style>
+        /* spacificity is the priority given to when same element has multiple input from different cmd */
+        h1{
+            /* spacificity=1 */
+            color:aqua;
+        }
+        h1.yello{
+            /* spacificity=1+10=11 */
+            color: yellow;
+        }
+        .blue{
+            /* spacificity=10 */
+            color: blue;
+        }
+        .orange{
+            /* spacificity=10 */
+            color:orange;
+        }
+        [data-x=a]{
+            /* This is an Attribute Selector */
+            /* spacificity=10 */
+            color:brown;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="yello blue orange" data-x="a">CSS Spacificity</h1>
+    <table>
+        <ol>
+            <li>appearance: the order in which your CSS rules appear</li>
+            <li>Specificity: an algorithm that determines which CSS selector has the strongest match</li>
+            <li>Origin: the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS</li>
+            <li>Importance: some CSS rules are weighted more heavily than others, especially with the <b>!important</b> rule type,</li>
+            <li><b>Spacificity can be added</b></li>
+        </ol>
+    </table>
+</body>
+</html>

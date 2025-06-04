@@ -1,0 +1,8 @@
+alert("hello world")
+console.log('2'+2+'2')
+console.log('A'+1)
+console.log("Code is running...")
+alert("Code is looking like a Wow")
+var a = prompt("Enter your Number")
+console.log("Your number is " + a)
+alert("Your number is " + a)

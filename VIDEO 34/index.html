@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <style>
+        .cards{
+            display:flow-root;
+            border: 2px solid black;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        img{
+            float:right;
+            height: 200px;
+        }
+        .card:nth-child(3){
+            clear:both
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://th.bing.com/th/id/OIP.GPFEY6kfgxbsja6gmrW6rwHaE7?rs=1&pid=ImgDetMain" alt="nature">
+        <div class="card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, quaerat voluptatibus in vitae odio possimus officiis voluptas veniam ullam blanditiis, dolore repellat non!</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque architecto exercitationem aperiam consectetur animi deserunt delectus fugiat dolore a, nihil dicta harum vitae facere ad vel iusto laudantium beatae totam ex neque, nulla magni sed voluptatem. Expedita maxime quos repellendus, consequatur aliquid perspiciatis aliquam omnis laboriosam facilis necessitatibus consectetur nemo veniam blanditiis provident, architecto eius voluptatum autem ut, earum enim praesentium. Voluptatibus dolor alias magnam. Ipsum quae repellat obcaecati totam libero beatae, aliquam laborum officiis voluptas incidunt debitis adipisci sequi ex ad esse nesciunt! Culpa, nulla repellat perferendis, nemo vero iste nihil aliquid illo commodi repudiandae ullam amet cumque sint!</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit assumenda nam labore sequi, illo itaque culpa rerum officia iste voluptatibus asperiores, laudantium laborum. Nisi omnis fuga soluta tempora voluptatem? Sunt id facere totam laborum consectetur quibusdam facilis numquam maxime, repudiandae molestiae nostrum, nisi repellendus architecto ad officia iusto expedita eos?</div>
+    </div>
+</body>
+</html>

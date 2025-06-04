@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-4</title>
+    <style>
+        :root{
+            --prymcolor:rgb(0, 255, 119);
+            --seccolor:rgb(255, 208, 0);
+            --tricolor:rgb(251, 0, 255);
+            --quadcolor:rgb(0, 255, 247);
+            --fontsz:20px;
+        }
+        h1{
+            background-color: var(--quadcolor);
+        }
+        .nav{
+            background-color:var(--prymcolor);
+        }
+        .nav:hover{
+            background-color: var(--seccolor);
+        }
+        ul{
+            display:flex;
+            list-style: none;
+        }
+        ul li:hover{
+            background-color: var(--tricolor);
+        }
+        li{
+            padding: 5px;
+            margin: 5px;
+            font-size: var(--fontsz);
+        }
+        p{
+            padding: var(--fontsz);
+            margin: 5px;
+            font-size: var(--fontsz);
+            background-color: var(--tricolor);
+        }
+    </style>
+</head>
+<body>
+    <h1>multi color nav bar </h1>
+    <nav class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Content</li>
+        </ul>
+    </nav>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nostrum minima eius unde adipisci vel consectetur, quasi cupiditate id quod praesentium eveniet ducimus corrupti doloremque odio dicta quisquam molestias ipsum voluptatibus libero, voluptates eligendi nam repellat asperiores. Dolorum nulla mollitia, adipisci libero voluptate incidunt aspernatur voluptates alias quos. Corporis sint maxime, eaque pariatur aliquam impedit quas?</p>
+</body>
+</html>

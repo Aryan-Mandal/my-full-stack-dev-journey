@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        #parent{
+            border:2px solid black;
+            display: flex;
+            flex-direction: row;
+            height:90vh;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-content: center;
+            align-items: center;
+            
+        }
+        .box{
+            border:1px solid purple;
+            height:150px;
+            width:250px;
+        }
+        #box1{
+            background-color: aqua;
+        }
+        #box2{
+            background-color: brown;
+        }
+        #box3{
+            background-color: blue;
+        }
+        #box4{
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="parent">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMS</title>
+    <meta name="description" content="this is a page with shit" />
+    <meta name="keywords" content="lol" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Form and input tags</h1>
+    <form action="post">
+      <div>
+        <label for="username"> Enter your user name </label>
+        <input
+          type="text"
+          autofocus
+          required
+          id="username"
+          name="username"
+          placeholder="What is your name?"
+        />
+      </div>
+      <div>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <br />
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+      </div>
+      <div>
+        <input type="checkbox" id="harry" name="check" value="harry bhai" />
+        <label for="harry">harry bhai</label>
+        <input type="checkbox" id="aryan" name="check" value="aryan bhai" />
+        <label for="aryan">aryan bhai</label>
+      </div>
+      <div>
+        <label for="comment">Enter your comment hare</label><br />
+        <textarea id="comment" name="comment" cols="25" rows="5"> </textarea>
+      </div>
+      <div>
+        <label for="fruits">What is your favorite fruit?</label>
+        <br />
+        <select id="fruits" name="fruits">
+          <option value="apple">apple</option>
+          <option value="mango">mango</option>
+          <option value="banana">banana</option>
+          <option value="cherry">cherry</option>
+          <option value="other">others</option>
+        </select>
+      </div>
+      <div>
+        <input type="range" name="volume" min="0" max="100" />
+        <input type="number" name="quantity" min="0" max="10" />
+      </div>
+    </form>
+  </body>
+</html>

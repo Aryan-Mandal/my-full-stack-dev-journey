@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container{
+            border: 3px  solid red;
+            display: flex;
+            justify-content: center;
+            /*align item in centre in the x axis */
+            align-items: center;
+            /* align item in centre in the y axis */
+            height:80vh;
+            /* flex-wrap: wrap; */  
+            flex-wrap: wrap-reverse;
+            align-content:center;
+            /* There is no justify-content in centre */
+            flex-flow: row wrap;
+            row-gap: 15px;
+            column-gap: 40px;
+            /* or <row gap> <column gap> */ gap:15px 40px;
+        }
+        .item{
+            height:36px;
+            width:36px;
+            border: 2px solid black;
+            margin: 4px;
+            background-color: blueviolet;
+            
+    }
+    </style>
+
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">11</div>
+            <div class="item">12</div>
+            <div class="item">13</div>
+            <div class="item">14</div>
+            <div class="item">15</div>
+            <div class="item">16</div>
+            <div class="item">17</div>
+            <div class="item">18</div>
+            <div class="item">19</div>
+            <div class="item">20</div>
+        </div>
+    </main>
+</body>
+</html>

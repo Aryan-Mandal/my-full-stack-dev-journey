@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-5</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .main{
+        margin: 0;
+        padding: 0;
+      }
+      .nav {
+        background-color: rgb(170, 86, 248);
+        width: 100vw;
+        height: 60px;
+        margin: 0;
+        padding: 0;
+        position:sticky;
+        top:0px;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+      }
+      li {
+        padding: 20px 55px 15px 5px;
+        margin: 0;
+      }
+      a {
+        color: rgba(50, 20, 78, 0.683);
+        text-decoration: none;
+      }
+      .container {
+        background-color: red;
+        height: 300vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+      }
+      .boxes {
+        background-color: aqua;
+        height: 230vh;
+        width: 40vw;
+        margin: 30px 25px 20px;
+        display:inline-block
+      }
+      .box {
+        border: 2px solid black;
+        border-radius: 20px;
+        height: 80px;
+        width: 50vw;
+        text-align: center;
+        margin:30px 30vh;
+        font-size: 35px;
+        margin: 0;
+        display: block;
+      }
+      .float{
+        background-color: orange;
+        position: fixed;
+        height:40px;
+        width:40px;
+        right:20px;
+        bottom:30px;
+        border-radius: 20px;
+      }
+      footer{
+        background-color: white;
+        height:50px;
+        width:99vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <nav class="nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="container">
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="box">Welcome to this Sigma Web Development Express</div>
+      </div>
+    </div>
+    <div class="float"></div>
+    <footer></footer>
+  </body>
+</html>
