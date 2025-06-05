@@ -1,0 +1,30 @@
+.item {
+  background-color: aqua;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid black;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+body {
+  background-color: gray;
+}
+.container {
+  display: flex;
+}
+@media (min-width: 600px) and (max-width: 1085px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}
