@@ -25,6 +25,7 @@ html {
   /* top: 300px; */
   /* left: 1035px; */
   animation: leftMoving 5s ease-in-out 1s infinite alternate;
+  box-sizing: border-box;
 }
 /* .box:hover {
   transform: scale(1.2); Gets bigger smoothly 
@@ -48,6 +49,7 @@ html {
   animation-timing-function: ease-in-out;
   /* animation-timing-function: cubic-bezier(0.55, -0.81, 0.89, 1.07); */
   animation-direction: alternate;
+  box-sizing: border-box;
 }
 .circle {
   margin: 15px;
@@ -57,8 +59,9 @@ html {
   position: relative;
   border: 3px solid;
   border-radius: 50px;
-  animation: movingCircle 15s ease-in-out 0s infinite alternate none;
+  animation: movingCircle 15s ease-in-out 0s infinite alternate;
   z-index: 2;
+  box-sizing: border-box;
 }
 .bigCircle {
   margin: 15px;
@@ -69,15 +72,16 @@ html {
   background-color: aqua;
   position: relative;
   left: 45%;
-  animation: bigCircleMoving 0.3s ease-in-out 0s infinite alternate none;
-  animation-name: bigCircleMoving;
+  animation: bigCircleMoving 0.3s ease-in-out 0s infinite alternate;
+  box-sizing: border-box;
+  /* animation-name: bigCircleMoving;
   animation-duration: 0.3s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-delay: 0s;
   animation-fill-mode: none;
   animation-direction: alternate;
-  z-index: 3;
+  z-index: 3; */
 }
 @keyframes rightMoving {
   from {
@@ -86,13 +90,13 @@ html {
   }
   to {
     top: 0px;
-    left: 1035px;
+    left: 82vw;
   }
 }
 @keyframes leftMoving {
   from {
     top: 135px;
-    left: 1035px;
+    left: 82vw;
   }
   to {
     top: 135px;
