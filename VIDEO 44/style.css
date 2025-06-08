@@ -22,6 +22,6 @@
   padding: 0px 30px;
   margin: 10px;
 }
-.buyNow {
+.buyNow button {
   flex: 0 0 auto;
 }
