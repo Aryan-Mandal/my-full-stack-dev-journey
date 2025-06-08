@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.gap {
+  flex-grow: 1;
+}
+.logo img {
+  flex: 0 0 auto;
+  margin: 0px 10px;
+}
+.navBox {
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  font-family: sans-serif;
+}
+.tabs > ul {
+  display: flex;
+  list-style: none;
+  padding: 0px 30px;
+  margin: 10px;
+}
+.buyNow {
+  flex: 0 0 auto;
+}

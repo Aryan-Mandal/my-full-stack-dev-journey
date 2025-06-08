@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.box1 {
+  height: 100px;
+  width: 200px;
+  background-color: aqua;
+  border: 3px solid salmon;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  transition: all 3s;
+  color: azure;
+}
+.box1:hover {
+  background-color: salmon;
+  border: 3px solid aqua;
+  transform: scale(1.5);
+  translate: 150px;
+  transform: rotate(360deg);
+  height: 550px;
+  width: 350px;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
