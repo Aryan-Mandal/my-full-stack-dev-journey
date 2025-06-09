@@ -2,26 +2,81 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 .gap {
+  flex-grow: 6;
+}
+.logo {
+  /* flex: 0 0 auto; */
   flex-grow: 1;
 }
 .logo img {
-  flex: 0 0 auto;
+  /* flex: 0 0 auto; */
   margin: 0px 10px;
 }
 .navBox {
   display: flex;
-  margin: 20px;
+  margin: 0px 20px;
   align-items: center;
-  font-family: sans-serif;
+}
+.tabs {
+  flex-grow: 3;
+  margin: 0px 0px 0px 100px;
+  /* width: 100px; */
 }
 .tabs > ul {
   display: flex;
   list-style: none;
-  padding: 0px 30px;
+  padding: 0px 10px;
   margin: 10px;
 }
-.buyNow button {
+.buyNow {
+  flex: 1;
   flex: 0 0 auto;
+}
+.buyNow button {
+  font-weight: bold;
+  background-color: azure;
+  height: 40px;
+  padding: 10px 10px;
+  margin: 20px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+.language {
+  /* flex-grow: 1; */
+  margin: 0px 20px 0px 5px;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Download {
+  font-size: 50px;
+  margin: 50px 0px 10px 0px;
+}
+.description {
+  font-size: 25px;
+  margin: 15px 180px 15px 180px;
+}
+.downloadBox {
+  display: flex;
+  /* display: inline-block; */
+}
+.downloadBox div {
+  /* margin: 70px 0px 10px 55px; */
+  background-color: aqua;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+.gridBody {
+  display: grid;
 }
