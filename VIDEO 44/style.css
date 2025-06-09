@@ -12,6 +12,9 @@ html {
   height: 100%;
 }
 @media (min-width: 1200px) {
+  .shrinkTabs {
+    display: none;
+  }
   .gap {
     flex-grow: 6;
   }
@@ -148,6 +151,9 @@ html {
   }
 }
 @media (max-width: 1200px) and (min-width: 800px) {
+  .shrinkTabs {
+    display: none;
+  }
   .logo {
     /* flex: 0 0 auto; */
     flex-grow: 1;
@@ -231,6 +237,226 @@ html {
     place-items: center;
   }
   .box {
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .smallTitle {
+    padding: 10px;
+    margin: 10px;
+    font-size: 0.8rem;
+    color: var(--greyVariant);
+  }
+  .title {
+    /* padding: 10px; */
+    margin: 15px;
+  }
+  .bitDownload {
+    border: none;
+    background-color: rgb(42, 255, 42);
+    padding: 10px;
+    border-radius: 5px;
+    color: azure;
+    font-weight: bold;
+  }
+  .bitDownload:hover {
+    cursor: pointer;
+  }
+  .boxDescriptions {
+    font-size: 8px;
+    margin: 5px;
+    color: var(--greyVariant);
+  }
+}
+@media (max-width: 800px) and (min-width: 520px) {
+  .gap {
+    flex-grow: 5;
+  }
+  .shrinkTabs {
+    font-size: 3rem;
+  }
+  .shrinkTabs:hover {
+    cursor: pointer;
+  }
+  .navBox {
+    display: flex;
+    margin: 0px 20px;
+    align-items: center;
+  }
+  .tabs {
+    display: none;
+  }
+  .buyNow {
+    flex: 1;
+    flex: 0 0 auto;
+  }
+  .buyNow a {
+    font-weight: bold;
+    background-color: azure;
+    height: 40px;
+    padding: 10px 10px;
+    margin: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+  }
+  .buyNow a:hover {
+    cursor: pointer;
+  }
+  .language {
+    /* flex-grow: 1; */
+    margin: 0px 20px 0px 5px;
+  }
+  .language:hover {
+    cursor: pointer;
+  }
+  .body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .downloadBox {
+    display: flex;
+    /* display: inline-block; */
+  }
+  .downloadBox div {
+    /* margin: 70px 0px 10px 55px; */
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto 40px auto;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+  }
+  .downloadBox div:hover {
+    cursor: pointer;
+  }
+  .gridBody {
+    display: grid;
+    margin: auto 20px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    grid-template-rows: repeat(10, 1fr);
+    height: auto;
+    place-items: center;
+  }
+  .box {
+    /* height: 12rem; */
+    /* width: 20rem; */
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .smallTitle {
+    padding: 10px;
+    margin: 10px;
+    font-size: 0.8rem;
+    color: var(--greyVariant);
+  }
+  .title {
+    /* padding: 10px; */
+    margin: 15px;
+  }
+  .bitDownload {
+    border: none;
+    background-color: rgb(42, 255, 42);
+    padding: 10px;
+    border-radius: 5px;
+    color: azure;
+    font-weight: bold;
+  }
+  .bitDownload:hover {
+    cursor: pointer;
+  }
+  .boxDescriptions {
+    font-size: 8px;
+    margin: 5px;
+    color: var(--greyVariant);
+  }
+}
+@media (max-width: 520px) and (min-width: 320px) {
+  .gap {
+    flex-grow: 2;
+  }
+  .shrinkTabs {
+    font-size: 3rem;
+  }
+  .shrinkTabs:hover {
+    cursor: pointer;
+  }
+  .navBox {
+    display: flex;
+    margin: 0px 20px;
+    align-items: center;
+  }
+  .tabs {
+    display: none;
+  }
+  .buyNow {
+    flex: 1;
+    flex: 0 0 auto;
+  }
+  .buyNow a {
+    font-weight: bold;
+    background-color: azure;
+    height: 40px;
+    padding: 10px 10px;
+    margin: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+  }
+  .buyNow a:hover {
+    cursor: pointer;
+  }
+  .language {
+    display: none;
+  }
+  .body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .downloadBox {
+    display: flex;
+    /* display: inline-block; */
+  }
+  .downloadBox div {
+    /* margin: 70px 0px 10px 55px; */
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto 40px auto;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+  }
+  .downloadBox div:hover {
+    cursor: pointer;
+  }
+  .gridBody {
+    display: grid;
+    margin: auto 20px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    grid-template-rows: repeat(10, 1fr);
+    height: auto;
+    place-items: center;
+  }
+  .box {
+    /* height: 12rem; */
+    /* width: 20rem; */
     border-radius: 5px;
     background-color: whitesmoke;
     padding: 20px;
