@@ -11,117 +11,258 @@ body,
 html {
   height: 100%;
 }
-.gap {
-  flex-grow: 6;
+@media (min-width: 1200px) {
+  .gap {
+    flex-grow: 6;
+  }
+  .logo {
+    /* flex: 0 0 auto; */
+    flex-grow: 1;
+  }
+  .logo img {
+    /* flex: 0 0 auto; */
+    margin: 0px 10px;
+  }
+  .logo img:hover {
+    cursor: pointer;
+  }
+  .navBox {
+    display: flex;
+    margin: 0px 20px;
+    align-items: center;
+  }
+  .tabs {
+    flex-grow: 3;
+    /* margin: 0px 0px 0px 100px; */
+    /* width: 100px; */
+  }
+  .tabs > ul {
+    display: flex;
+    list-style: none;
+    padding: 0px 10px;
+    margin: 10px;
+  }
+  .tabs > ul > li {
+    cursor: pointer;
+  }
+  .buyNow {
+    flex: 1;
+    flex: 0 0 auto;
+  }
+  .buyNow a {
+    font-weight: bold;
+    background-color: azure;
+    height: 40px;
+    padding: 10px 10px;
+    margin: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+  }
+  .buyNow a:hover {
+    cursor: pointer;
+  }
+  .language {
+    /* flex-grow: 1; */
+    margin: 0px 20px 0px 5px;
+  }
+  .language:hover {
+    cursor: pointer;
+  }
+  .body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Download {
+    font-size: 50px;
+    margin: 50px 0px 10px 0px;
+  }
+  .description {
+    font-size: 25px;
+    margin: 15px 180px 15px 180px;
+  }
+  .downloadBox {
+    display: flex;
+    /* display: inline-block; */
+  }
+  .downloadBox div {
+    /* margin: 70px 0px 10px 55px; */
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto 40px auto;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+  }
+  .downloadBox div:hover {
+    cursor: pointer;
+  }
+  .gridBody {
+    display: grid;
+    margin: auto 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    grid-template-rows: repeat(4, 1fr);
+    height: auto;
+    place-items: center;
+  }
+  .box {
+    /* height: 12rem; */
+    /* width: 20rem; */
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .smallTitle {
+    padding: 10px;
+    margin: 10px;
+    font-size: 0.8rem;
+    color: var(--greyVariant);
+  }
+  .title {
+    /* padding: 10px; */
+    margin: 15px;
+  }
+  .bitDownload {
+    border: none;
+    background-color: rgb(42, 255, 42);
+    padding: 10px;
+    border-radius: 5px;
+    color: azure;
+    font-weight: bold;
+  }
+  .bitDownload:hover {
+    cursor: pointer;
+  }
+  .boxDescriptions {
+    font-size: 8px;
+    margin: 5px;
+    color: var(--greyVariant);
+  }
 }
-.logo {
-  /* flex: 0 0 auto; */
-  flex-grow: 1;
-}
-.logo img {
-  /* flex: 0 0 auto; */
-  margin: 0px 10px;
-}
-.navBox {
-  display: flex;
-  margin: 0px 20px;
-  align-items: center;
-}
-.tabs {
-  flex-grow: 3;
-  margin: 0px 0px 0px 100px;
-  /* width: 100px; */
-}
-.tabs > ul {
-  display: flex;
-  list-style: none;
-  padding: 0px 10px;
-  margin: 10px;
-}
-.buyNow {
-  flex: 1;
-  flex: 0 0 auto;
-}
-.buyNow button {
-  font-weight: bold;
-  background-color: azure;
-  height: 40px;
-  padding: 10px 10px;
-  margin: 20px;
-  border-radius: 5px;
-  border: 2px solid black;
-}
-.language {
-  /* flex-grow: 1; */
-  margin: 0px 20px 0px 5px;
-}
-.body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.Download {
-  font-size: 50px;
-  margin: 50px 0px 10px 0px;
-}
-.description {
-  font-size: 25px;
-  margin: 15px 180px 15px 180px;
-}
-.downloadBox {
-  display: flex;
-  /* display: inline-block; */
-}
-.downloadBox div {
-  /* margin: 70px 0px 10px 55px; */
-  background-color: aqua;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  padding: 20px;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
-}
-.gridBody {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  grid-template-rows: repeat(4, 1fr);
-  margin: 100px;
-}
-.box {
-  /* height: 12rem; */
-  /* width: 20rem; */
-  border-radius: 5px;
-  background-color: whitesmoke;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-.smallTitle {
-  padding: 10px;
-  margin: 10px;
-  font-size: 0.8rem;
-  color: var(--greyVariant);
-}
-.title {
-  /* padding: 10px; */
-  margin: 15px;
-}
-.bitDownload {
-  border: none;
-  background-color: rgb(42, 255, 42);
-  padding: 10px;
-  border-radius: 5px;
-  color: azure;
-  font-weight: bold;
-}
-.boxDescriptions {
-  font-size: 8px;
-  margin: 5px;
-  color: var(--greyVariant);
+@media (max-width: 1200px) and (min-width: 800px) {
+  .logo {
+    /* flex: 0 0 auto; */
+    flex-grow: 1;
+  }
+  .logo img {
+    /* flex: 0 0 auto; */
+    margin: 0px 10px;
+  }
+  .logo img:hover {
+    cursor: pointer;
+  }
+  .navBox {
+    display: flex;
+    margin: 0px 20px;
+    align-items: center;
+  }
+  .tabs {
+    flex-grow: 3;
+    /* margin: 0px 0px 0px 100px; */
+    /* width: 100px; */
+  }
+  .tabs > ul {
+    display: flex;
+    list-style: none;
+    padding: 0px 10px;
+    margin: 10px;
+  }
+  .tabs > ul > li {
+    cursor: pointer;
+  }
+  .buyNow {
+    flex: 1;
+    flex: 0 0 auto;
+  }
+  .buyNow a {
+    font-weight: bold;
+    background-color: azure;
+    height: 40px;
+    padding: 10px 10px;
+    margin: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+  }
+  .buyNow a:hover {
+    cursor: pointer;
+  }
+  .language {
+    /* flex-grow: 1; */
+    margin: 0px 20px 0px 5px;
+  }
+  .language:hover {
+    cursor: pointer;
+  }
+  .body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .downloadBox {
+    display: flex;
+  }
+  .downloadBox div {
+    /* margin: 70px 0px 10px 55px; */
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto 40px auto;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+  }
+  .gridBody {
+    display: grid;
+    margin: auto 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    grid-template-rows: repeat(5, 1fr);
+    height: auto;
+    place-items: center;
+  }
+  .box {
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .smallTitle {
+    padding: 10px;
+    margin: 10px;
+    font-size: 0.8rem;
+    color: var(--greyVariant);
+  }
+  .title {
+    /* padding: 10px; */
+    margin: 15px;
+  }
+  .bitDownload {
+    border: none;
+    background-color: rgb(42, 255, 42);
+    padding: 10px;
+    border-radius: 5px;
+    color: azure;
+    font-weight: bold;
+  }
+  .bitDownload:hover {
+    cursor: pointer;
+  }
+  .boxDescriptions {
+    font-size: 8px;
+    margin: 5px;
+    color: var(--greyVariant);
+  }
 }
