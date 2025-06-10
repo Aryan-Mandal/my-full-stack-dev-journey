@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 80vh;
+  width: 80vw;
+  background-color: aqua;
+  position: relative;
+}
+.ball {
+  height: 20vh;
+  width: 20vh;
+  border-radius: 20vh;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: bouncingAtX 5s linear infinite,
+    bouncingAtY 1s ease-out infinite alternate;
+}
+@keyframes bouncingAtX {
+  from {
+    left: 0;
+  }
+  to {
+    left: 70vw;
+  }
+}
+@keyframes bouncingAtY {
+  from {
+    bottom: 0;
+    transform: scaleY(0.9);
+  }
+  to {
+    bottom: 80%;
+    transform: scaleY(1.05);
+  }
+}
