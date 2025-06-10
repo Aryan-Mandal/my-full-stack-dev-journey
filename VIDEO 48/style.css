@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-color: aqua;
+  height: 500px;
+  width: 880px;
+}
+.ball {
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+  background-color: black;
+  position: relative;
+  top: 420px;
+  animation: bouncingBall 10s 1s infinite;
+}
+@keyframes bouncingBall {
+  0% {
+    top: 420px;
+    left: 0px;
+    animation-timing-function: cubic-bezier(0, 0, 0.47, 1.24);
+  }
+  10% {
+    top: 100px;
+    left: 80px;
+    animation-timing-function: cubic-bezier(0.54, 0.22, 0.61, 0.74);
+  }
+  20% {
+    top: 420px;
+    left: 160px;
+    animation-timing-function: cubic-bezier(0, 0, 0.47, 1.24);
+  }
+  30% {
+    top: 150px;
+    left: 240px;
+    animation-timing-function: cubic-bezier(0.54, 0.22, 0.61, 0.74);
+  }
+  40% {
+    top: 420px;
+    left: 320px;
+    animation-timing-function: cubic-bezier(0, 0, 0.47, 1.24);
+  }
+  50% {
+    top: 200px;
+    left: 400px;
+    animation-timing-function: cubic-bezier(0.54, 0.22, 0.61, 0.74);
+  }
+  60% {
+    top: 420px;
+    left: 480px;
+    animation-timing-function: cubic-bezier(0, 0, 0.47, 1.24);
+  }
+  70% {
+    top: 250px;
+    left: 560px;
+    animation-timing-function: cubic-bezier(0.54, 0.22, 0.61, 0.74);
+  }
+  80% {
+    top: 420px;
+    left: 640px;
+    animation-timing-function: cubic-bezier(0, 0, 0.47, 1.24);
+  }
+  90% {
+    top: 350px;
+    left: 720px;
+    animation-timing-function: cubic-bezier(0.54, 0.22, 0.61, 0.74);
+  }
+  100% {
+    top: 420px;
+    left: 800px;
+    animation-timing-function: cubic-bezier(0, 0, 0.47, 1.24);
+  }
+}

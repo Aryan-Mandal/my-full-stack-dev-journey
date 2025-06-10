@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-color: aqua;
+  width: 880px;
+  height: 500px;
+}
+.ball {
+  height: 80px;
+  width: 80px;
+  background-color: azure;
+  position: relative;
+  top: 420px;
+  border-radius: 80px;
+  animation: bouncingBall 10s 1s infinite;
+  transform-origin: bottom center;
+}
+@keyframes bouncingBall {
+  0% {
+    transform: translate(0, 0) scaleY(1);
+  }
+  10% {
+    transform: translate(80px, -400px) scaleY(1.05);
+  }
+  20% {
+    transform: translate(160px, 0px) scaleY(0.9);
+  }
+  30% {
+    transform: translate(240px, -350px) scaleY(1.05);
+  }
+  40% {
+    transform: translate(320px, 0px) scaleY(0.9);
+  }
+  50% {
+    transform: translate(400px, -300px) scaleY(1.05);
+  }
+  60% {
+    transform: translate(480px, 0px) scaleY(0.9);
+  }
+  70% {
+    transform: translate(560px, -200px) scaleY(1.05);
+  }
+  80% {
+    transform: translate(640px, 0px) scaleY(0.9);
+  }
+  90% {
+    transform: translate(720px, -100px) scaleY(1.05);
+  }
+  100% {
+    transform: translate(800px, 0px) scaleY(1);
+  }
+}
