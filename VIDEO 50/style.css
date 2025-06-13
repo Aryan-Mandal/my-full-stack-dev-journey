@@ -1,0 +1,29 @@
+.cat {
+  height: 300px;
+  width: auto;
+  filter: blur(2px);
+}
+.monkey {
+  height: 300px;
+  width: auto;
+  filter: contrast(250%);
+}
+.dog {
+  height: 300px;
+  width: auto;
+  filter: brightness(250%);
+}
+.steve {
+  filter: invert(1);
+}
+.PW {
+  filter: grayscale(100%);
+}
+.laptop {
+  height: 300px;
+  width: auto;
+  filter: sepia(100%);
+}
+.ice {
+  filter: opacity(60%);
+}
