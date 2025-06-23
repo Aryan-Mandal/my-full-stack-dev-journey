@@ -3,10 +3,26 @@
   padding: 0;
   box-sizing: border-box;
 }
-main {
+.main {
   background-image: url(Assets/Images/Background.jpg);
-  background-size: cover;
+  /* background-size: cover; */
+  background-position: center center;
   background-repeat: no-repeat;
   height: 110vh;
+  position: absolute;
+  top: 0%;
   width: 100vw;
+  z-index: -2;
+}
+.main .darkEffect {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+}
+.logo {
+  height: 10vh;
+  width: 20vw;
 }
