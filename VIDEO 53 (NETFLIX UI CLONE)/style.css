@@ -1,28 +1,60 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
-.main {
-  background-image: url(Assets/Images/Background.jpg);
-  /* background-size: cover; */
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 110vh;
-  position: absolute;
-  top: 0%;
-  width: 100vw;
-  z-index: -2;
-}
-.main .darkEffect {
-  background-color: black;
+html,
+body {
   height: 100%;
-  width: 100%;
-  opacity: 0.6;
-  position: absolute;
-  top: 0;
 }
 .logo {
-  height: 10vh;
-  width: 20vw;
+  color: #e50914;
+  height: 2.5rem;
+}
+main {
+  background-image: url(Assets/Images/Background.jpg);
+  height: 110vh;
+  background-size: cover;
+  position: relative;
+  top: -90px;
+  z-index: -2;
+}
+.darkEffect {
+  opacity: 0.7;
+  background-color: black;
+  height: 100%;
+  /* position: absolute; */
+  /* top: 0px; */
+}
+.signIn {
+  background-color: red;
+  color: azure;
+  margin: 0px 0px 0px 10px;
+  padding: 8px;
+  width: 75px;
+  border: none;
+  border-radius: 5px;
+}
+.language {
+  color: azure;
+}
+.language option {
+  color: black;
+}
+.language img {
+  width: 30px;
+}
+@media (min-width: 780px) {
+  .language {
+    padding: 10px;
+    background: none;
+    color: azure;
+  }
+  nav {
+    display: flex;
+    width: 85vw;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
