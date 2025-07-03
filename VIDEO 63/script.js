@@ -1,3 +1,50 @@
+// Assigning an array
+let arr = [1, 2, 3, 4, 5];
+
+// Common attributes and functions (methods) related to arrays:
+
+// Attributes:
+console.log("arr.length:", arr.length); // Number of elements in the array
+
+// Functions (Methods):
+console.log("arr.push(6):", arr.push(6), "| arr:", arr); // Adds element to the end
+console.log("arr.pop():", arr.pop(), "| arr:", arr); // Removes last element
+console.log("arr.unshift(0):", arr.unshift(0), "| arr:", arr); // Adds element to the start
+console.log("arr.shift():", arr.shift(), "| arr:", arr); // Removes first element
+console.log("arr.includes(3):", arr.includes(3), "| arr:", arr); // Checks if array contains
+console.log("arr.indexOf(2):", arr.indexOf(2), "| arr:", arr); // Returns index of 2
+console.log('arr.join("-"):', arr.join("-"), "| arr:", arr); // Joins elements into a string
+console.log("arr.slice(1, 3):", arr.slice(1, 3), "| arr:", arr); // Returns a shallow copy from index 1 to 2
+console.log("arr.splice(2, 1):", arr.splice(2, 1), "| arr:", arr); // Removes 1 element at index 2
+console.log("arr.reverse():", arr.reverse(), "| arr:", arr); // Reverses the array
+console.log("arr.sort():", arr.sort(), "| arr:", arr); // Sorts the array
+console.log("arr.concat([7, 8]):", arr.concat([7, 8]), "| arr:", arr); // Returns a new array with added elements
+console.log(
+  "arr.map(x => x * 2):",
+  arr.map((x) => x * 2),
+  "| arr:",
+  arr
+); // Returns a new array with function applied
+console.log(
+  "arr.filter(x => x > 2):",
+  arr.filter((x) => x > 2),
+  "| arr:",
+  arr
+); // Returns a new array with elements > 2
+console.log("arr.forEach(x => console.log(x)) output:");
+arr.forEach((x) => console.log(x)); // Executes function for each element
+console.log(
+  "arr.reduce((a, b) => a + b, 0):",
+  arr.reduce((a, b) => a + b, 0),
+  "| arr:",
+  arr
+); // Reduces array to a single value
+
+// Mutability explanation:
+console.log(
+  "Arrays in JavaScript are mutable. You can change their contents (add, remove, or modify elements) after creation."
+);
+
 // --- Array Methods: Mutating vs Non-Mutating ---
 // Mutating methods (change the original array):
 //   push(), pop(), shift(), unshift(), splice(), reverse(), sort(), fill(), copyWithin()
@@ -10,33 +57,25 @@
 // Memory trick: Only splice (not slice) mutates. If it sounds like it’s “cutting” or “changing”, it’s likely mutating.
 // -----------------------------------------------------
 
-// Assigning an array
-let arr = [1, 2, 3, 4, 5];
+// --- Looping over arrays: for, for...in, for...of ---
+// Using the arr array:
 
-// Common attributes and functions (methods) related to arrays:
+console.log("Using for loop:");
+for (let i = 0; i < arr.length; i++) {
+  console.log(`Index ${i}:`, arr[i]);
+}
+// Use when you need the index or want to control iteration steps.
 
-// Attributes:
-console.log(arr.length); // Number of elements in the array
+console.log("Using for...in loop:");
+for (let index in arr) {
+  console.log(`Index ${index}:`, arr[index]);
+}
+// for...in is intended for objects, but works on arrays (indexes as strings).
+// Can pick up inherited properties, so use with caution on arrays.
 
-// Functions (Methods):
-arr.push(6); // Adds element to the end
-arr.pop(); // Removes last element
-arr.unshift(0); // Adds element to the start
-arr.shift(); // Removes first element
-arr.includes(3); // Checks if array contains 3
-arr.indexOf(2); // Returns index of 2
-arr.join("-"); // Joins elements into a string
-arr.slice(1, 3); // Returns a shallow copy from index 1 to 2
-arr.splice(2, 1); // Removes 1 element at index 2
-arr.reverse(); // Reverses the array
-arr.sort(); // Sorts the array
-arr.concat([7, 8]); // Returns a new array with added elements
-arr.map((x) => x * 2); // Returns a new array with function applied
-arr.filter((x) => x > 2); // Returns a new array with elements > 2
-arr.forEach((x) => console.log(x)); // Executes function for each element
-arr.reduce((a, b) => a + b, 0); // Reduces array to a single value
-
-// Mutability explanation:
-console.log(
-  "Arrays in JavaScript are mutable. You can change their contents (add, remove, or modify elements) after creation."
-);
+console.log("Using for...of loop:");
+for (let value of arr) {
+  console.log("Value:", value);
+}
+// Best for arrays when you only need the values, not the indexes.
+// ---------------------------------------------
