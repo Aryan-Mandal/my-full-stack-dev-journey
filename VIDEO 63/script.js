@@ -1,5 +1,4 @@
 // Assigning an array
-let arr = [1, 2, 3, 4, 5];
 
 // Common attributes and functions (methods) related to arrays:
 
@@ -11,14 +10,37 @@ console.log("arr.push(6):", arr.push(6), "| arr:", arr); // Adds element to the 
 console.log("arr.pop():", arr.pop(), "| arr:", arr); // Removes last element
 console.log("arr.unshift(0):", arr.unshift(0), "| arr:", arr); // Adds element to the start
 console.log("arr.shift():", arr.shift(), "| arr:", arr); // Removes first element
+// What would be the output of all these functions?
+// a) [1,2,3,4,5,6]
+// b) [1,2,3,4,5]
+// c) [0,1,2,3,4,5]
+// d) [1,2,3,4,5]
+// Note: shift() and unshift() are less efficient than push() and pop() for large arrays.
+
 console.log("arr.includes(3):", arr.includes(3), "| arr:", arr); // Checks if array contains
 console.log("arr.indexOf(2):", arr.indexOf(2), "| arr:", arr); // Returns index of 2
 console.log('arr.join("-"):', arr.join("-"), "| arr:", arr); // Joins elements into a string
+// What would be the output of all these functions?
+// a) true
+// b) 1
+// c) "1-2-3-4-5"
+
+// What does these functions do?
+
 console.log("arr.slice(1, 3):", arr.slice(1, 3), "| arr:", arr); // Returns a shallow copy from index 1 to 2
 console.log("arr.splice(2, 1):", arr.splice(2, 1), "| arr:", arr); // Removes 1 element at index 2
 console.log("arr.reverse():", arr.reverse(), "| arr:", arr); // Reverses the array
-console.log("arr.sort():", arr.sort(), "| arr:", arr); // Sorts the array
+console.log("arr.sort():", arr.sort(), "| arr:", arr); // Sorts the array according to Unicode code points
 console.log("arr.concat([7, 8]):", arr.concat([7, 8]), "| arr:", arr); // Returns a new array with added elements
+// What would be the output of all these functions?
+// a) [2,3]
+// b) [3]
+// c) [5,4,3,2,1]
+// d) [1,2,3,4,5]
+// e) [1,2,3,4,5,7,8]
+
+// What do these function do?
+
 console.log(
   "arr.map(x => x * 2):",
   arr.map((x) => x * 2),
@@ -39,6 +61,15 @@ console.log(
   "| arr:",
   arr
 ); // Reduces array to a single value
+// What would be the output of all these functions?
+// a) [2,4,6,8,10]
+// b) [3,4,5]
+// c) 1
+//    2
+//    3
+//    4
+//    5
+// d) 15
 
 // Mutability explanation:
 console.log(
@@ -58,7 +89,8 @@ console.log(
 // -----------------------------------------------------
 
 // --- Looping over arrays: for, for...in, for...of ---
-// Using the arr array:
+
+let arr = [1, 2, 3, 4, 5]; // Ignore mutability for now
 
 console.log("Using for loop:");
 for (let i = 0; i < arr.length; i++) {
@@ -78,4 +110,5 @@ for (let value of arr) {
   console.log("Value:", value);
 }
 // Best for arrays when you only need the values, not the indexes.
+
 // ---------------------------------------------
