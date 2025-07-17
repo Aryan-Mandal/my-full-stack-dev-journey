@@ -62,7 +62,9 @@ main {
 .content img {
   object-fit: cover;
   height: 250px;
+  width: 250px;
   margin: 1rem;
+  margin-bottom: 2rem;
   border-radius: 15px;
 }
 .recipe {
